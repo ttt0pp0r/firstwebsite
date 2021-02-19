@@ -1,0 +1,304 @@
+body {
+  height: auto;
+  width: 1260px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Courier Prime', monospace;
+  color: #264653;
+}
+
+.main {
+  position: relative;
+}
+
+div#background {
+  background-image: url('./image/43731-O4130W.png');
+  overflow: hidden;
+  background-position: center;
+  height: 450px;
+  margin: 0px;
+  padding: 0px;
+}
+
+div#heading {
+  display: flex;
+  flex-grow: 4;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 1120px;
+  margin: auto;
+}
+
+.centralImg img {
+  width: 200px;
+  width: 200px;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 40px;
+}
+
+.leftSide a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #264653;
+}
+
+.leftSide a:hover {
+  color: grey;
+}
+
+
+.rightSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 40px;
+}
+
+.rightSide a{
+  text-decoration: none;
+  font-size: 25px;
+  color: #264653;
+}
+
+.rightSide a:hover{
+  color: grey;
+}
+
+a#outer {
+  width: 175px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #E9C46A;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#outer img{
+  width: 40px;
+  height: 40px;
+  padding-bottom: 5px;
+}
+
+a#outer:hover {
+  background-color: grey;
+}
+
+.container,
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.images {
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.images img {
+  width: 200px;
+  height: auto;
+}
+
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: grey;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.images:hover .cart1,
+.images:hover .cart2,
+.images:hover .cart3,
+.images:hover .cart4 {
+  bottom: 105px;
+  padding: 10px;
+  opacity: 1;
+  text-decoration: none;
+}
+
+div .padding h2{
+  font-size: 45px;
+  padding-left: 150px;
+  padding-top: 30px;
+}
+
+.footer{
+  background-color:black;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  height: 250px;
+}
+
+.footer p{
+  padding-top: 30px;
+}
+
+.signUp {
+  padding-top: 30px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.facebook a img{
+  height: 35px;
+  width: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 80%;
+}
+
+.facebook a img:hover {
+  opacity: 100%;
+}
+
+.instagram a img{
+  height: 35px;
+  width: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 80%;
+}
+
+.instagram a img:hover{
+  opacity: 100%;
+}
+
+.twitter a img{
+  height: 35px;
+  width: 35px;
+  opacity: 80%;
+  padding-left: 5px;
+}
+
+.twitter a img:hover{
+  opacity: 100%;
+  padding-left: 5px;
+}
+
+.signUp a{
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.signUp a:hover{
+  color: grey;
+}
+
+/* cart menu */
+
+.product-container {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.product-container ion-icon{
+  font-size: 25px;
+  color: blue;
+  cursor: pointer;
+}
+
+.product-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  border-bottom: 4px solid lightgrey;
+}
+
+.product-title {
+  width: 45%;
+  margin: 0 auto;
+  border-bottom: 1px solid lightgrey;
+}
+
+.price {
+  width: 15%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.quantity {
+  width: 30%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.total {
+  width: 10%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.product {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.product ion-icon {
+  cursor: pointer;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.products img {
+  width: 75px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
+
